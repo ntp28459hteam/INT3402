@@ -1,0 +1,30 @@
+// This is a demonstration homework for compiler subject
+/*
+ * @author: Tran Phuong Nam
+ * @version: naive-0.0.1
+ * @help: fuck this shit
+ */
+boolean is_my_program_naive = true;
+int term1, term2, sum;
+
+term1 = term2 = 5.;
+sum = term1 + term2;
+
+"abc\n";
+
+float diff(float num1, float num2) {
+    if(num1 <= num2) {
+        return num2 - num1;
+    }
+    else {
+        return num1 - num2;    
+    }
+}
+
+boolean xor(boolean b1, boolean b2) {
+    return (!b1 && b2) || (b1 && !b2); 
+}
+
+float multiply(float mul1, float mul2) {
+    return mul1 * mul2;
+}
