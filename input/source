@@ -2,7 +2,8 @@
 /*
  * @author: Tran Phuong Nam
  * @version: naive-0.0.1
- * @help: fuck this shit
+ * @help: do-it-your-self if you r a CS student =(
+ * @tutorial: some handsome Indian YouTube guy
  */
 boolean is_my_program_naive = true;
 int term1, term2, sum;

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 // import javafx.util.Pair;
 %%
-%class Number
+%class Lexer
 %standalone
 %line
 %column
@@ -24,11 +24,13 @@ letter = [A-Za-z_]
 
 ArithmeticOperators = \+|\-|\*|\/
 RelationalOperators = \<|\<=|\>|\>=
-EqualityOperators = \=\=|\!\=
+EqualityOperators = "=="|"!="
 LogicalOperators = \|\||\&\&|\!
-AssignmentOperator = \=
+AssignmentOperator = "="
 
-Comments = [//][\x00-\x7F](\x10|\x13|x10x13)
+Comments = {onelineComment}|{multilineComment}
+onelineComment = "//"[\x00-\x7F]*(\x10|\x13|\x10\x13)
+multilineComment = "/*"[\x00-\x7F]*"*/"
 Separators = \{|\}|\(|\)|\[|\]|\;|\, 
 
 /*Delimiters = {|}|(|)|[|]|;|,*/ 
